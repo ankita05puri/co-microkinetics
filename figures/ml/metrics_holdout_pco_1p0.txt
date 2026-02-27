@@ -1,0 +1,13 @@
+split_type: holdout
+pco_cutoff: 1.000000
+train_rows: 120
+test_rows: 255
+R2_logTOF: 0.967118
+MAE_logTOF: 9.266e-01
+R2_TOF: -4.409137
+MAE_TOF: 6.216e-05
+parity_plot: figures/ml/parity_holdout_pco_1p0.png
+error_plot: figures/ml/error_vs_pco_holdout_pco_1p0.png
+dataset_path: data/dataset.csv
+features: invT=1/T, logPCO=log(PCO), target=log(TOF)
+model: GradientBoostingRegressor(random_state=42)

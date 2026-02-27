@@ -1,0 +1,13 @@
+split_type: random
+pco_cutoff: NA
+train_rows: 300
+test_rows: 75
+R2_logTOF: 0.999155
+MAE_logTOF: 1.180e-01
+R2_TOF: 0.994672
+MAE_TOF: 1.433e-05
+parity_plot: figures/ml/parity_random.png
+error_plot: figures/ml/error_vs_pco_random.png
+dataset_path: data/dataset.csv
+features: invT=1/T, logPCO=log(PCO), target=log(TOF)
+model: GradientBoostingRegressor(random_state=42)
